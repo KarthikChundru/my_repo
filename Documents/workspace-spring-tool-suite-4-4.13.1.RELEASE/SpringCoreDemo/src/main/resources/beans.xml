@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="projectBeans1" class="com.zensar.ProjectBean" >
+<property name="name" value="zensar"/>
+<property name="departmentId" value="23" />
+</bean>
+<bean id="projectBeans2" class="com.zensar.ProjectBean" >
+<property name="name" value="zensarAdminProject"/>
+<property name="departmentId" value="24" />
+</bean>
+<bean id="employeeBeans" class="com.zensar.EmployeeBean" >
+<property name="name" value="Donny"/>
+</bean>
+<!-- Enable Annotation based configuration -->
+<context:annotation-config />
+</beans>

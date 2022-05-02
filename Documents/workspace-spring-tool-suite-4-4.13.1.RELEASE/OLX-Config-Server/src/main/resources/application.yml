@@ -1,0 +1,13 @@
+spring:
+ application:
+  name: configuration-server
+cloud:
+ config:
+  server:
+ git:
+ uri: https://github.com/KarthikChundru/OLX-App-Config
+ username: anand-mentor
+ clone-on-start: true
+ 
+ server:
+  port:8888
